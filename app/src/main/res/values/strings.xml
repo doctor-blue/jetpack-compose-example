@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Compose Example</string>
+    <string name="home">Home</string>
+    <string name="green_plants">Green Plants</string>
+    <string name="flowers">Flowers</string>
+    <string name="indoor_plants">Indoor Plants</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.devcomentry.composeexample
+package com.devcomentry.plants
 
 import org.junit.Test
 
