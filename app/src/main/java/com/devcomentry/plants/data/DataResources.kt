@@ -9,7 +9,7 @@ object DataResources {
         PlantsCategory.IndoorPlants
     )
 
-    val Plants: List<Plant> = listOf(
+    val plants: List<Plant> = listOf(
         Plant(
             "Sample 1",
             60.0,
@@ -87,7 +87,7 @@ object DataResources {
             20.5,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
