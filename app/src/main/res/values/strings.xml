@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Compose Example</string>
+    <string name="app_name">Plants</string>
     <string name="home">Home</string>
     <string name="green_plants">Green Plants</string>
     <string name="flowers">Flowers</string>
