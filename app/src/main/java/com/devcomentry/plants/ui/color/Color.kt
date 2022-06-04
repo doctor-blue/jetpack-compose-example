@@ -14,4 +14,6 @@ val Green = Color(0xff49be25)
 
 val MainColor = Color(0xff00bc71)
 val Pink = Color(0xffff648f)
+val TextColor = Color.Black
+val HintColor = Color.Gray
 

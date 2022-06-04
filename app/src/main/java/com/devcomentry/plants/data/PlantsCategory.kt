@@ -5,9 +5,10 @@ import androidx.annotation.StringRes
 import com.devcomentry.plants.R
 
 enum class PlantsCategory(
-    @StringRes title: Int,
-    @DrawableRes icon: Int
+    @StringRes val title: Int,
+    @DrawableRes val icon: Int
 ) {
+    All(R.string.all, -1),
     GreenPlant(R.string.green_plants, R.drawable.green_plants),
     Flowers(
         R.string.flowers,

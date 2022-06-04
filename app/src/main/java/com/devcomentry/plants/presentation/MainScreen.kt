@@ -39,7 +39,7 @@ fun MainScreen() {
     )
     {
         Column(
-            modifier = Modifier.padding(SpaceScreenSuperSmall)
+            modifier = Modifier.padding(SpaceScreenSmall)
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),

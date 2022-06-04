@@ -4,6 +4,7 @@ import com.devcomentry.plants.R
 
 object DataResources {
     val categories: List<PlantsCategory> = listOf(
+        PlantsCategory.All,
         PlantsCategory.Flowers,
         PlantsCategory.GreenPlant,
         PlantsCategory.IndoorPlants
@@ -15,16 +16,16 @@ object DataResources {
             60.0,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
-            false
+            true
         ),
         Plant(
             "Sample 2",
             80.0,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -33,16 +34,16 @@ object DataResources {
             75.0,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
-            false
+            true
         ),
         Plant(
             "Sample 4",
             50.0,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -51,7 +52,7 @@ object DataResources {
             90.0,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -60,7 +61,7 @@ object DataResources {
             91.2,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -69,7 +70,7 @@ object DataResources {
             102.6,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -78,7 +79,7 @@ object DataResources {
             18.7,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -96,7 +97,7 @@ object DataResources {
             9.8,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -105,7 +106,7 @@ object DataResources {
             228.0,
             "$",
             "",
-            R.drawable.indoor_plants,
+            R.drawable.sample9,
             PlantsCategory.IndoorPlants,
             false
         ),
