@@ -3,10 +3,8 @@ package com.devcomentry.plants.presentation.home
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.GridCells
-import androidx.compose.foundation.lazy.LazyVerticalGrid
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.runtime.Composable
@@ -39,16 +37,15 @@ fun HomeItem(plant: Plant) {
         backgroundColor = Color.White,
         modifier = Modifier
             .padding(6.dp)
+            .width(Space160)
     ) {
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-        ) {
+        Box {
             Column {
                 Image(
                     painter = painterResource(plant.image),
                     contentDescription = plant.name,
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier.fillMaxWidth()
+                        .height(Space128),
                     contentScale = ContentScale.FillWidth
                 )
                 PlantsMediumText(
@@ -105,15 +102,11 @@ fun HomeItem(plant: Plant) {
     }
 }
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HomeList(
     list: List<Plant> = DataResources.plants
 ) {
-    LazyVerticalGrid(
-        cells = GridCells.Fixed(2),
-        state = rememberLazyListState(),
-    ) {
+    LazyRow {
         items(list) {
             HomeItem(plant = it)
         }

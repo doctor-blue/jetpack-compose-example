@@ -17,6 +17,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.devcomentry.plants.ui.ImgSizeSmall
+import com.devcomentry.plants.ui.SpaceScreenSmall
 
 @Composable
 @Preview
@@ -44,7 +45,7 @@ fun PlantsBottomNavigation(
             .fillMaxWidth()
             .clip(navShape)
             .background(MaterialTheme.colors.surface)
-            .padding(vertical = 22.dp),
+            .padding(vertical = SpaceScreenSmall),
         horizontalArrangement = Arrangement.SpaceAround,
         verticalAlignment = Alignment.CenterVertically
     ) {

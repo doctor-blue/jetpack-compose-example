@@ -13,16 +13,22 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.semantics.Role.Companion.Image
+import androidx.compose.ui.tooling.preview.Preview
 import com.devcomentry.plants.R
 import com.devcomentry.plants.presentation.favorites.FavoriteScreen
 import com.devcomentry.plants.presentation.home.HomeScreen
 import com.devcomentry.plants.presentation.profile.ProfileScreen
 import com.devcomentry.plants.ui.*
+import com.devcomentry.plants.ui.color.HintColor
 import com.devcomentry.plants.ui.common.BottomNavigationItem
 import com.devcomentry.plants.ui.common.ImageButton
 import com.devcomentry.plants.ui.common.PlantsBottomNavigation
 
+@Preview(showSystemUi = true)
+@Composable
+fun MainPreview() {
+    MainScreen()
+}
 
 @Composable
 fun MainScreen() {
@@ -35,11 +41,11 @@ fun MainScreen() {
                 currentRoute.value = it.route
             }
         },
-        backgroundColor = Color.White
+        backgroundColor = Color.White,
     )
     {
         Column(
-            modifier = Modifier.padding(SpaceScreenSmall)
+            modifier = Modifier.padding(it).padding(SpaceScreenSmall)
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -57,13 +63,15 @@ fun MainScreen() {
                     size = ImgSizeNormal
                 )
                 PlantsLightText("Welcome", Color.Black, fontSize = TextSize18)
-                Image(
-                    painter = painterResource(R.drawable.sample_avatar),
-                    contentDescription = "avatar",
-                    contentScale = ContentScale.Crop,            // crop the image if it's not a square
-                    modifier = Modifier
-                        .size(ImgSizeNormal)
-                        .clip(CircleShape)                       // clip to the circle shape
+                ImageButton(
+                    painterResource(R.drawable.ic_outline_shopping_cart_24),
+                    onClick = {
+
+                    },
+                    backgroundColor = Color.White,
+                    contentColor = HintColor,
+                    imgSize = ImgSizeSmall,
+                    size = ImgSizeNormal
                 )
             }
             when (currentRoute.value) {

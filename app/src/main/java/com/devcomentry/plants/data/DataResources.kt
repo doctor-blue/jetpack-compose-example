@@ -16,7 +16,7 @@ object DataResources {
             60.0,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample1,
             PlantsCategory.IndoorPlants,
             true
         ),
@@ -25,7 +25,7 @@ object DataResources {
             80.0,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample2,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -34,7 +34,7 @@ object DataResources {
             75.0,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample3,
             PlantsCategory.IndoorPlants,
             true
         ),
@@ -43,7 +43,7 @@ object DataResources {
             50.0,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample4,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -52,7 +52,7 @@ object DataResources {
             90.0,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample5,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -61,7 +61,7 @@ object DataResources {
             91.2,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample6,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -70,7 +70,7 @@ object DataResources {
             102.6,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample7,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -79,7 +79,7 @@ object DataResources {
             18.7,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample8,
             PlantsCategory.IndoorPlants,
             false
         ),
@@ -97,16 +97,16 @@ object DataResources {
             9.8,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample10,
             PlantsCategory.IndoorPlants,
-            false
+            true
         ),
         Plant(
             "Sample 11",
             228.0,
             "$",
             "",
-            R.drawable.sample9,
+            R.drawable.sample11,
             PlantsCategory.IndoorPlants,
             false
         ),

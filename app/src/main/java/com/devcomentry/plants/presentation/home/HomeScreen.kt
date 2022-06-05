@@ -40,7 +40,7 @@ fun HomeScreen() {
         TextField(
             value = value,
             onValueChange = onValueChange,
-            textStyle = TextStyle(fontSize = 17.sp),
+            textStyle = TextStyle(fontSize = TextSize18),
             leadingIcon = {
                 Icon(
                     Icons.Filled.Search, null,
